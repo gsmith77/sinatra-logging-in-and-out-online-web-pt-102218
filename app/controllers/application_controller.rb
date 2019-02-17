@@ -19,6 +19,7 @@ class ApplicationController < Sinatra::Base
       erb :account
     else
       redirect '/error'
+      erb :error
     end
   end
 
