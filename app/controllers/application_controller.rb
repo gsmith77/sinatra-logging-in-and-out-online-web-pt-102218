@@ -23,6 +23,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/account' do
+    binding.pry
     #FILL THIS OUT BEFORE TRYING ANYTHING NEW!!!
   end
 
