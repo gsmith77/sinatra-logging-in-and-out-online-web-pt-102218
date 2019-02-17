@@ -13,7 +13,6 @@
     <%if Helpers.is_logged_in?(session)%>
       <h1>Welcome <%=@user.username%>!</h1>
       <h2>Your Account Balance is: <%=@user.balance%></h2>
-    <%end%>
     <%else%>
       <% redirect to '/error'%>
     <%end%>
