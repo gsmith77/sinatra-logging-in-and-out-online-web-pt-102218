@@ -31,6 +31,7 @@ class ApplicationController < Sinatra::Base
     else
       redirect '/account'
       erb :account
+    end
     #binding.pry
     #FILL THIS OUT BEFORE TRYING ANYTHING NEW!!!
   end
