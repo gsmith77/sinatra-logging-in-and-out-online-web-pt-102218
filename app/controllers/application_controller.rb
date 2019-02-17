@@ -23,7 +23,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/account' do
-      bidning.pry
+      binding.pry
     if !self.is_logged_in?(session)
       redirect '/error'
       erb :error
