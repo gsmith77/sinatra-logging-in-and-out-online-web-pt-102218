@@ -24,7 +24,7 @@ class ApplicationController < Sinatra::Base
 
   get '/account' do
       binding.pry
-    if !Helper.is_logged_in?(session)
+    if !Helpers.is_logged_in?(session)
       redirect '/error'
       erb :error
     else
