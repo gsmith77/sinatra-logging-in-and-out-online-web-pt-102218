@@ -10,7 +10,7 @@
   </head>
   <body id="page-top">
     <%binding.pry%>
-    <%if User.is_logged_in?(session)%>
+    <%if Helpers.is_logged_in?(session)%>
       <h1>Welcome <%=@user.username%>!</h1>
       <h2>Your Account Balance is: <%=@user.balance%></h2>
     <%end%>
