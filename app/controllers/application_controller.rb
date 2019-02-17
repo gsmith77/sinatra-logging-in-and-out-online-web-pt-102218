@@ -23,8 +23,7 @@ class ApplicationController < Sinatra::Base
   end
 
   get '/account' do
-        displays the account information if a user is logged in
-
+      bidning.pry
     if !self.is_logged_in?(session)
       redirect '/error'
       erb :error
